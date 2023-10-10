@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Martel+Sans:wght@300&family=Poppins:ital,wght@0,400;0,600;1,300&family=Roboto+Condensed:wght@300&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,56 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item__text {
+  color: #000;
+  font-family: lato;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: rgb(255, 0, 0);
+}
+
+.todo-item__remove {
+  position: relative;
+  width: 30px;
+  height: auto;
+  font-size: 15px;
+  background: rgba(73, 0, 0, 0.68);
+  color: rgb(253, 211, 211);
+  border-radius: 5px;
+  border: 1px solid rgba(73, 0, 0, 0.68);
+  cursor: pointer;
+}
+
+.todo-item__remove:hover {
+  color:rgba(73, 0, 0, 0.68);
+  background-color:rgb(253, 211, 211);
+}
+
+
+.input-text {
+  width: 400px;
+  border: 1px solid gainsboro;
+  border-radius: 50px 0px 0px 50px;
+  padding: 10px;
+}
+
+.plus-btn {
+  width: 70px;
+  height: 45px;
+  border: 1px solid rgb(186, 185, 185);
+  border-radius: 0px 50px 50px 0px ;
+  transition: all 900ms;
 }
